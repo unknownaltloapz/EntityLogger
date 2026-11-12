@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "entitylogger",
+  "version": "${version}",
+  "name": "EntityLogger",
+  "description": "Highlights falling block entities with a client-side glowing outline.",
+  "authors": [
+    "sh4man"
+  ],
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.sh4man.entitylogger.EntityLoggerClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.20.1",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": ">=0.166.0"
+  },
+  "mixins": [
+    "entitylogger.client.mixins.json"
+  ]
+}
